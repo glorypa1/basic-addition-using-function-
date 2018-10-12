@@ -1,0 +1,18 @@
+#include <stdio.h>
+void add(int *a, int *b, int *r);
+int main()
+{
+int a,b;
+int *p,*q,*r;
+printf ("enter value of a and b");
+scanf ("%d%d", &a,&b);
+p=&a; q=&b;
+add(p,q,r);
+printf ("r=%d",*r);
+return 0;
+}
+void add(int*p, int*q, int*r)
+{
+*r= *p+*q;
+}
+
